@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/gym.css
+</head>
+
+<body>
+    <img src="static/bg.jpg" alt="Welcome to the gym" width="100%" height="100%">
+    <nav>
+        <ul>
+            <li><a href="/" >Home</a></li>
+            <li><a href="/">About us</a></li>
+            <li><a href="/">Contact us</a></li>
+        </ul>
+    </nav>
+    <h1><u>#{content}</u></h1>
+    <p>Fill this form and get a consulting call from Us!</p>
+    <div class="footer">
+        <form action="/ " method="POST" id='contact'>
+
+            <input type="text" name="Name" id='name'placeholder="Enter your name:">
+            <input type="number" name="age"id='age'placeholder="Enter your age">
+            <input type="phone" name="phone" id='number'placeholder="Enter your phone number">
+            <input type="email" id='email' name="email"placeholder="Enter your email id">
+            <div>
+                | Gender: <input type="radio" id='gender'name="mygender"> Male <input type="radio" name="mygender"> Female <input type="radio" id='gender' name="mygender">Transgender
+            </div>
+            <div>
+                <input type="number" id='height' name="height"placeholder="Enter your height in cms">
+                <input type="number" id='weight' name="weight" placeholder="Enter your Weight in kgs">
+            </div>
+            <br>
+            <button class='btn'>Submit</button>
+            </br>
+    
+        </form>
+    </div>
+</body>
+
+</html>
